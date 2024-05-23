@@ -1,0 +1,94 @@
+/* Genel stil ayarları */
+* {
+    margin: 0 auto; /* Tüm öğelerin dış kenar boşluğunu ortalar */
+    padding: 0; /* Tüm öğelerin iç kenar boşluğunu sıfırlar */
+    list-style: none; /* Liste öğelerinin işaretlerini kaldırır */
+    text-decoration: none; /* Metin bağlantılarındaki alt çizgiyi kaldırır */
+    box-sizing: border-box; /* Kutunun içeriğini, kenarlığını ve dolgusunu, toplam genişlik ve yüksekliği hesaplar */
+    font-family: "poppins"; /* Metin fontunu belirler */
+    scroll-behavior: smooth; /* Sayfada yumuşak kaydırma efekti sağlar */
+    
+}
+
+/* Body stil ayarları */
+body {
+    display: flex; /* İçeriği yatay hizalar */
+    justify-content: center; /* İçeriği yatay eksende ortalar */
+    align-items: center; /* İçeriği dikey eksende ortalar */
+    min-height: 100vh; /* Minimum yükseklik belirler, tam pencere yüksekliği kadar genişler */
+    background: url("pngresim.jpg") no-repeat; /* Arka plan resmi ekler ve tekrar etmesini engeller */
+    background-size: cover; /* Arka plan resminin ekran boyutuna uygun şekilde ölçeklenmesini sağlar */
+    background-position: center; /* Arka plan resminin ortalanmasını sağlar */
+}
+
+/* Header stil ayarları */
+header {
+    position: fixed; /* Sayfa kaydırıldığında sabit durmasını sağlar */
+    top: 0; /* Sayfanın üst kısmına yaslanır */
+    left: 0; /* Sayfanın sol kısmına yaslanır */
+    width: 100%; /* Tam genişlik alır */
+    height: 80px; /* Yükseklik belirler */
+    display: flex; /* İçeriği yatay hizalar */
+    align-items: center; /* İçeriği dikey eksende ortalar */
+    justify-content: space-between; /* Öğeler arasında boşluk bırakır */
+    padding: 0 100px; /* Sol ve sağ kenar boşluğunu belirler */
+    margin-top: 30px;
+}
+
+/* Logo stil ayarları */
+.logo {
+    font-size: 1.8em; /* Yazı tipi boyutu */
+    color: #fff; /* Metin rengi */
+    font-weight: bold; /* Metnin kalınlığını belirler */
+    user-select: none; /* Kullanıcı seçimini engeller */
+    font-family: Great Vibes;
+    font-size: 80PX;
+}
+
+/* Navigasyon menüsü stil ayarları */
+.nav-bar ul {
+    display: flex; /* Liste öğelerini yatay hizalar */
+}
+
+.nav-bar ul li a {
+    position: relative; /* Göreceli konumlandırma sağlar */
+    border-radius: 50px; /* Kenar yuvarlanmasını sağlar */
+    display: block; /* Blok öğe olarak görüntüler */
+    font-size: 1.8em; /* Yazı tipi boyutu */
+    color: #fff; /* Metin rengi */
+    text-decoration: none; /* Metin bağlantılarının alt çizgisini kaldırır */
+    font-weight: 500; /* Metnin kalınlığını belirler */
+    margin-left: 20px; /* Sol kenar boşluğunu belirler */
+    padding: 0.5em; /* Dolgu miktarını belirler */
+    transition: 0.2s; /* Geçiş efekti süresini belirler */
+}
+
+.nav-bar ul li a::after {
+    content: ''; /* Ek içerik ekler */
+    position: absolute; /* Mutlak konumlandırma sağlar */
+    left: 0; /* Sol kenara yaslanır */
+    bottom: -6px; /* Alt kenara yakın konumlandırılır */
+    width: 100%; /* Tam genişlik alır */
+    height: 3px; /* Yükseklik belirler */
+    background:rgb(250, 158, 93); /* Arkaplan rengi */
+    border-radius: 5px; /* Kenar yuvarlanmasını sağlar */
+    transform-origin: right; /* Dönüşün kaynağını belirler */
+    transform: scaleX(0); /* Ölçeklendirme işlemi uygular */
+    transition: transform .5s; /* Geçiş efekti süresini belirler */
+}
+
+.nav-bar ul li a:hover::after {
+    transform: scaleX(1); /* Ölçeklendirme işlemi uygular */
+    transform-origin: left; /* Dönüşün kaynağını belirler */
+}
+
+/* Giriş butonu stil ayarları */
+.nav-bar .btn-login {
+    color: #333; /* Metin rengi */
+    background: linear-gradient(0deg, rgba(195,93,34,1) 0%, rgba(253,187,45,1) 100%); /* Arkaplan rengi */
+}
+
+.nav-bar .btn-login {
+    background: linear-gradient(0deg, rgba(195,93,34,1) 0%, rgba(253,187,45,1) 100%); /* Arkaplan rengi */
+    color: #162938; /* Metin rengi */
+}
